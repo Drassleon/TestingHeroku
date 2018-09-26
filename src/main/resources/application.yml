@@ -1,0 +1,33 @@
+#configuracion de acceso a BD
+#spring:
+#  jpa:
+#    database: mysql
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+      
+#estrategia de generacion de base de datos
+#  datasource:
+#    driverClassName: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost/db_springboot?useSSL=false 
+#    username: root
+#    password: admin
+
+
+#configuracion de acceso a BD
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update #create-drop 
+  #estrategia de generacion de base de datos
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/db_RisingBands
+    username: postgres
+    password: admin
+    
+    
+server:
+  port: 8070 
