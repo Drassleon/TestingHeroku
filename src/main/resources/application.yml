@@ -24,10 +24,10 @@ spring:
   #estrategia de generacion de base de datos
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/db_RisingBands
-    username: postgres
-    password: admin
+    url: ${JDBC_DATABASE_URL}
+    username: ${JDBC_DATABASE_USERNAME}
+    password: ${JDBC_DATABASE_PASSWORD}
     
     
 server:
-  port: 8070 
+  port: 5432 
